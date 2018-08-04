@@ -7,12 +7,29 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>course</ion-title>
+    <ion-title>{{ currentCourse }}</ion-title>
+
+
   </ion-navbar>
+
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-list>
+      <ion-item *ngFor="let course of courseList" class="listTest">
+        <h4><b>Course Name: </b>{{course.CourseName}}</h4>
+
+        <h4><b>Course Code:</b> {{course.CourseCode}}</h4>
+
+
+
+
+
+
+      </ion-item>
+    </ion-list>
+  <button ion-button full (click) ="addNewCourse()"><ion-icon name="add"></ion-icon></button>
 
 </ion-content>

@@ -12,23 +12,23 @@
   </ion-item>
 
   <ion-item>
-    <ion-input [(ngModel)]="currentGPA" placeholder="Enter Current GPA:     eg. 4.5 "></ion-input>
+    <ion-input type="number" [(ngModel)]="currentGPA" placeholder="Enter Current GPA:     eg. 4.5 "></ion-input>
   </ion-item>
 
   <ion-item>
-    <ion-input [(ngModel)]="targetGPA" placeholder="Enter Target GPA: "></ion-input>
+    <ion-input type="number" [(ngModel)]="targetGPA" placeholder="Enter Target GPA: "></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label>Course</ion-label>
     <ion-select [(ngModel)]="course">
       <ion-option value="1534">B. Computer Science</ion-option>
-      
+
       <ion-option value="m">B. Information Technology</ion-option>
     </ion-select>
   </ion-item>
 
   <button ion-button full (click)="pullClasses()">
-   Register
+   Submit
   </button>
 </ion-content>

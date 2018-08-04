@@ -25,4 +25,5 @@ export class HomePage {
     console.log(this.selectedCourse);
       this.navCtrl.push(CoursePage, this.selectedCourse);
   }
+
 }

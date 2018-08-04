@@ -49,14 +49,8 @@ export class CoursePage {
     {
       CourseName: '4',
       CourseCode: '0499551321'
-    },
-    {
-      CourseName: '5',
-      CourseCode: '0434971663'
-    },
-    {
-      CourseName: '6',
-      CourseCode: '0411828263'
     }
   ];
+
+  
 }

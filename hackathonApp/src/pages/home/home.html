@@ -1,34 +1,43 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      GPA M8
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-item>
-    <ion-input placeholder="Enter Student Number: "></ion-input>
-  </ion-item>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-input placeholder="Student ID "></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label>Course</ion-label>
+          <ion-select [(ngModel)]="course">
+            <ion-option value="1534">B. Computer Science</ion-option>
+            <ion-option value="m">B. Information Technology</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
 
-  <ion-item>
-
-    <ion-input [(ngModel)]="currentGPA" placeholder="Enter Current GPA:     eg. 4.5 "></ion-input>
-
-  </ion-item>
-
-  <ion-item>
-    <ion-input [(ngModel)]="targetGPA" placeholder="Enter Target GPA: "></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>Course</ion-label>
-    <ion-select [(ngModel)]="course">
-      <ion-option value="1534">B. Computer Science</ion-option>
-
-      <ion-option value="m">B. Information Technology</ion-option>
-    </ion-select>
-  </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-input [(ngModel)]="currentGPA" placeholder="Current GPA"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-input [(ngModel)]="targetGPA" placeholder="Target GPA"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
   <button ion-button full (click)="pullClasses()">
    Register
